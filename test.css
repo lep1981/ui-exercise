@@ -1,6 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* HEADER */
 .header,.main-content,.footer {width:100%;box-sizing:border-box;}
+.header {background: #222;color: #eee;padding: 5px 20px;}
+.header h1 {float:left;text-transform: uppercase;font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+.header ul.menu {float: right;margin: 0;padding: 0;width: 40%;text-align: right;}
+.clearfix {width:100%;height:0;clear:both;display:block;}
+.header ul.menu li {display:inline-block;margin:26px 15px 0;text-align:center;font-size:1.5em;}
+.header ul.menu li a {text-decoration: none;color:#eee;transition: all 0.5s ease-in-out;}
+.header ul.menu li a:hover {color:#ff6600;}
+
+/* CONTENT */
 .main-content .content-area {position:relative;float:left;width:70%;box-sizing:border-box;}
-.main-content .sidebar {position:relative;float:right;width:30%;box-sizing:border-box;}
+.main-content .content-area ul.items {width: 100%;margin: 0;padding: 15px;display: flex;list-style: none;flex-wrap: wrap;}
+.main-content .content-area ul.items li.single-item {width: 28%;margin: 0 5% 5% 0;}
+.main-content .content-area ul.items li.single-item img {width: 100%;}
+.main-content .sidebar {position:relative;float:right;width:30%;box-sizing:border-box;min-height:1000px;background:#eee;}
+
+/* FOOTER */
+.footer {width:100%;background:#ddd;padding:20px;box-sizing: border-box;clear:both;float:left;}
